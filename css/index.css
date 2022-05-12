@@ -186,3 +186,48 @@ h2.title {
 .waiting .waiting-wrapper .waiting-item .waiting-img {
   width: 100%;
 }
+
+.section {
+  height: 200px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+.my-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  height: 450px;
+  overflow: hidden;
+}
+
+.my-flex-box-1 {
+  order: 5;
+}
+.my-flex-box-2 {
+  order: 1;
+}
+.my-flex-box-3 {
+  order: 3;
+}
+.my-flex-box-4 {
+  order: 2;
+}
+.my-flex-box-5 {
+  order: 4;
+}
+
+.my-flex-box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  text-align: center;
+  font-size: 24px;
+
+  color: white;
+  border: 1px solid rgb(169, 0, 0);
+}
