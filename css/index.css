@@ -14,6 +14,7 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .promo {
@@ -130,7 +131,7 @@ h2.title {
 }
 
 .waiting {
-  height: 607px;
+  min-height: 607px;
   padding: 88px 0 75px 0;
   background-color: #efefef;
 }
@@ -163,6 +164,8 @@ h2.title {
 
 .waiting-wrapper {
   margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .waiting .waiting-wrapper .waiting-item {
@@ -174,9 +177,7 @@ h2.title {
 
   width: 345px;
   text-align: center;
-  display: inline-block;
   vertical-align: top;
-  margin: 0 15px;
 }
 
 .waiting-img {
@@ -187,47 +188,33 @@ h2.title {
   width: 100%;
 }
 
-.section {
-  height: 200px;
-  width: 100%;
-  background-color: #efefef;
+.optimization {
+  min-height: 550px;
+  padding: 108px 0 74px 0;
+}
+.container {
+}
+.optimization-header {
+  margin-left: 391px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #299cbd;
+}
+.optimization-text {
+  margin-left: 391px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  color: #4a4a4a;
 }
 
-.my-flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
-  height: 450px;
-  overflow: hidden;
-}
-
-.my-flex-box-1 {
-  order: 5;
-}
-.my-flex-box-2 {
-  order: 1;
-}
-.my-flex-box-3 {
-  order: 3;
-}
-.my-flex-box-4 {
-  order: 2;
-}
-.my-flex-box-5 {
-  order: 4;
-}
-
-.my-flex-box {
-  width: 150px;
-  height: 150px;
-  background-color: red;
-  text-align: center;
-  font-size: 24px;
-
-  color: white;
-  border: 1px solid rgb(169, 0, 0);
+.optimization-img {
+  position: absolute;
+  top: -47px;
+  left: -240px;
+  z-index: -1;
 }
