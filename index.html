@@ -11,34 +11,50 @@
     <section class="promo">
       <div class="top-dark-line">
         <header id="header">
-          <div class="logo">
-            <img src="icons/logo.png" alt="logo" class="logo__img" />
-            <div class="logo__text">WordPress интенсив</div>
+          <div class="container">
+            <nav id="nav-bar">
+              <div class="logo">
+                <a href="#program" id="navbar" class="nav-link">Программа</a>
+                <a href="#result" id="navbar" class="nav-link">Результат</a>
+                <div class="flex-column">
+                  <img src="icons/logo.png" alt="logo" class="logo__img" id="header-img" />
+                  <div class="logo__text">WordPress интенсив</div>
+                </div>
+                <a href="#bonus" id="navbar" class="nav-link">Бонусы</a>
+                <a href="#start" id="navbar" class="nav-link">Старт</a>
+              </div>
+            </nav>
           </div>
-          <nav></nav>
         </header>
       </div>
       <div class="container">
         <h1 class="title">Создать свой сайт на WordPress</h1>
         <div class="simple">
+          <div class="line-left"></div>
           <h2 class="title-big">это просто!</h2>
-          <div class="line"></div>
+
+          <div class="line-right"></div>
         </div>
         <h2 class="title">Куда сложнее сделать это правильно!</h2>
         <div class="promo-text">
-          Ежедневно в России появляется более 5 000 новых сайтов.<br />
+          Ежедневно в Украине появляется более 500 новых сайтов.<br />
           И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет?
           В чем формула успеха? Узнайте на предстоящем двухдневном
           <span>бесплатном</span> интенсиве!
         </div>
-        <button class="promo-btn">Записаться на интенсив!</button>
-        <div class="more">
-          <div class="more-text">узнать больше об интенсиве</div>
-          <img src="icons/arrow_down.png" alt="Arrow Down" class="more-img" />
-        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" id="email" placeholder="Введите ваш email" name="email" />
+          <input id="submit" type="submit" value="Записаться на интенсив!" />
+          <div class="more">
+            <div class="more-text">узнать больше об интенсиве</div>
+            <a href="#optimization"
+              ><img src="icons/arrow_down.png" alt="Arrow Down" class="more-img"
+            /></a>
+          </div>
+        </form>
       </div>
     </section>
-    <section class="waiting">
+    <section class="waiting" id="program">
       <div class="container">
         <h2 class="waiting-header">Что вас ждет в нашем интенсиве?</h2>
         <div class="waiting-divider"></div>
@@ -68,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="optimization">
+    <section id="optimization" class="optimization">
       <div class="container">
         <h2 class="optimization-header">Что такое оптимизация и зачем она нужна?</h2>
         <div class="optimization-text">
@@ -88,7 +104,7 @@
         <img src="img/woman_bg.png" alt="Woman" class="optimization-img" />
       </div>
     </section>
-    <section class="finish">
+    <section id="result" class="finish">
       <div class="container">
         <h2 class="finish-header">По окончании обучения Вы сможете!</h2>
         <div class="finish-divider"></div>
@@ -126,7 +142,7 @@
         </div>
       </div>
     </section>
-    <section class="gift">
+    <section class="gift" id="bonus">
       <div class="container">
         <img src="icons/gift.png" alt="" class="gift-icon" />
         <div class="gift-offer">
@@ -136,12 +152,21 @@
         <button class="promo-btn">Записаться на интенсив!</button>
       </div>
     </section>
-    <section class="announce">
+    <section id="start" class="announce">
       <div class="container">
-        <img src="img/announce.png" alt="" class="announce-img" />
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HirVxvZp2tw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h2 class="announce-title">
           Первый вебинар состоится:<br /><br />
-          <span>10 сентября в 20:00 по Москве</span>
+          <span>10 сентября в 20:00 по Киеву</span>
         </h2>
         <div class="announce-cat">Успейте записаться, количество мест ограничено!</div>
       </div>
